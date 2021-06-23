@@ -2,7 +2,7 @@
   "name": "amima",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://jy20.github.io/Amima/",
+  "homepage":"https://JY20.github.io/Amima",
   "dependencies": {
     "-": "0.0.1",
     "@testing-library/jest-dom": "^5.11.4",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"yarn build",
+    "predeploy":"npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
