@@ -20,4 +20,4 @@ function initFirebase() {
 
 initFirebase();
 
-export { firebase };
+export { firebase }
