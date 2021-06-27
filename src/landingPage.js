@@ -13,6 +13,7 @@ export class LandingPage extends React.Component {
     super(props);
     this.t1 = "   Coming Soon   ";
     this.t2 = " Amima";
+    this.database = firebase.database().ref().child('users');
     this.state = {
       email: "",
       formText: "",
@@ -29,16 +30,13 @@ export class LandingPage extends React.Component {
   }
   onSubmitForm(event) {
     event.preventDefault();
-    // const db  =firebase.firestore();
-    // const userRef = db.collection("users").add({
-    //   email: this.state.email
-    // }); 
-    firebase
-    .database()
-    .ref("notes")
-    .child('notes').push({email:this.state.email});
-    console.log("122"+this.state.email+"123")
-    this.setState({email:""})
+    console.log(this.state.email)
+    this.database.push().set({
+      email: this.state.email,
+    });
+    this.setState({
+      email:""
+    });
   }
   render() {
     return (
@@ -46,6 +44,7 @@ export class LandingPage extends React.Component {
         <header style={{ fontSize: "80px", paddingTop: "50px",fontWeight: 'bold'}}>
           <img style={{height:"80px", margin:"-10px"}} src={logo}/> {this.t2}
         </header>
+        <br/>
         <p style={{ fontSize: "35px"}}>
           A low price group buying social platform
           <br/>
@@ -55,9 +54,8 @@ export class LandingPage extends React.Component {
         <button style={{border:"none",width:"200px",height:"35px",borderRadius:50, fontSize: "25px", color:"#a30316", backgroundColor:"#f9cacf"}}>
         {this.t1}
         </button>
-        <p style={{ height: "10px"}}> </p>
+        <p style={{ height: "20px"}}> </p>
         <p style={{fontSize: "20px"}}>Sign up to recieve the newest updates for Amima</p>
-        <br/>
         <form onSubmit={this.onSubmitForm}>
           <div class="form-group">
             <label style={{ height: "50px", fontSize: "24px" }}></label>
