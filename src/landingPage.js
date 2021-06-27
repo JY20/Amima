@@ -13,6 +13,7 @@ export class LandingPage extends React.Component {
     super(props);
     this.t1 = "   Coming Soon   ";
     this.t2 = " Amima";
+    this.t3 = "";
     this.database = firebase.database().ref().child('users');
     this.state = {
       email: "",
@@ -37,6 +38,7 @@ export class LandingPage extends React.Component {
     this.setState({
       email:""
     });
+    this.t3="Sign Up Successful"
   }
   render() {
     return (
@@ -54,7 +56,7 @@ export class LandingPage extends React.Component {
         <button style={{border:"none",width:"200px",height:"35px",borderRadius:50, fontSize: "25px", color:"#a30316", backgroundColor:"#f9cacf"}}>
         {this.t1}
         </button>
-        <p style={{ height: "20px"}}> </p>
+        <p style={{ height: "10px"}}> </p>
         <p style={{fontSize: "20px"}}>Sign up to recieve the newest updates for Amima</p>
         <form onSubmit={this.onSubmitForm}>
           <div class="form-group">
@@ -67,6 +69,7 @@ export class LandingPage extends React.Component {
             </button>
           </div>
         </form>
+        <p style={{fontSize: "20px"}}>{this.t3}</p>
         <p style={{ height: "20px"}}> </p>
         <div style={{backgroundColor: "#b8f1e4", backgroundSize: 'cover', 
         backgroundImage: `url("https://www.xmple.com/wallpaper/violet-blue-gradient-linear-1920x1080-c2-e2b6ff-b6c7ff-a-60-f-14.svg")`}}>
