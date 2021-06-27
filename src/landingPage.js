@@ -5,6 +5,7 @@ import ig from "./instagram.png"
 import ml from "./email.png";
 import lk from "./linkedln.png";
 import logo from "./logoR.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap';
 
 export class LandingPage extends React.Component {
@@ -84,9 +85,20 @@ export class LandingPage extends React.Component {
         <div style={{ margin:"-20px", backgroundSize: 'cover', backgroundImage: `url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSroaf3kTkIraSmni84Du7Rysp3YF3Y8-RVj4EBIaCaB7KP5PYC3MdPaN_U9i4u6_MJxaU&usqp=CAU")`}}>
           <br/>
           <h1 style={{fontSize:"24px"}}>Key Features</h1>
-          <p style={{ fontSize: "20px"}}>Group shopping: Shop the product you like as a group for a lower price</p>
-          <p style={{ fontSize: "20px"}}>Making friends: Have conversations with friends who have an interest in similar products</p>
-          <p style={{ fontSize: "20px"}}>Product recommendations: Browsing through product reviews and recommendations from others</p>
+          <br/>
+          <Container>
+            <Row>
+              <Col style={{fontSize:"24px"}}>
+                Group shopping: Shop the product you like as a group for a lower price
+              </Col>
+              <Col style={{fontSize:"24px"}}>
+                Making friends: Have conversations with friends who have an interest in similar products
+              </Col>
+              <Col style={{fontSize:"24px"}}>
+                Product recommendations: Browsing through product reviews and recommendations from others
+              </Col>
+            </Row>
+          </Container>
           <br/>
           <br/>
         </div>
