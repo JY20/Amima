@@ -4,13 +4,14 @@ import fb from "./facebook.png"
 import ig from "./instagram.png"
 import ml from "./email.png";
 import lk from "./linkedln.png";
+import logo from "./logoR.png";
 import { Container, Row, Col } from 'reactstrap';
 
 export class LandingPage extends React.Component {
   constructor(props) {
     super(props);
     this.t1 = "   Coming Soon   ";
-    this.t2 = "";
+    this.t2 = " Amima";
     this.state = {
       email: "",
       formText: "",
@@ -41,7 +42,9 @@ export class LandingPage extends React.Component {
   render() {
     return (
       <div style={{backgroundColor: "#dcedff", backgroundSize: 'cover', backgroundImage: `url("https://wallpaperaccess.com/full/3803832.jpg")`}}>
-        <header style={{ fontSize: "80px", paddingTop: "50px",fontWeight: 'bold'}}>Amima</header>
+        <header style={{ fontSize: "80px", paddingTop: "50px",fontWeight: 'bold'}}>
+          <img style={{height:"80px", margin:"-10px"}} src={logo}/> {this.t2}
+        </header>
         <p style={{ fontSize: "35px"}}>
           A low price group buying social platform
           <br/>
