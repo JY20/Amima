@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/static/js/main.f8c2b1f0.chunk.js",
-    "main.js.map": "/static/js/main.f8c2b1f0.chunk.js.map",
+    "main.js": "/static/js/main.39a3064f.chunk.js",
+    "main.js.map": "/static/js/main.39a3064f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.73e108db.js",
     "runtime-main.js.map": "/static/js/runtime-main.73e108db.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
@@ -15,15 +15,17 @@
     "static/css/main.9d5b29c0.chunk.css.map": "/static/css/main.9d5b29c0.chunk.css.map",
     "static/js/2.e1a4d70c.chunk.js.LICENSE.txt": "/static/js/2.e1a4d70c.chunk.js.LICENSE.txt",
     "static/media/email.1bc529dc.png": "/static/media/email.1bc529dc.png",
+    "static/media/group.c63cb4e2.png": "/static/media/group.c63cb4e2.png",
     "static/media/instagram.a1950cc4.png": "/static/media/instagram.a1950cc4.png",
     "static/media/logoR.94552698.png": "/static/media/logoR.94552698.png",
-    "static/media/shop.654b8349.png": "/static/media/shop.654b8349.png"
+    "static/media/mes.a775a7ad.png": "/static/media/mes.a775a7ad.png",
+    "static/media/shop.423f9c75.png": "/static/media/shop.423f9c75.png"
   },
   "entrypoints": [
     "static/js/runtime-main.73e108db.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.e1a4d70c.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.f8c2b1f0.chunk.js"
+    "static/js/main.39a3064f.chunk.js"
   ]
 }
