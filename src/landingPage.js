@@ -79,8 +79,8 @@ export class LandingPage extends React.Component {
           </div>
         </form>
         <p style={{fontSize: "20px"}}>{this.t3}</p>
-        <p style={{ height: "20px"}}> </p>
-          <Home/>
+        {/* <p style={{ height: "20px"}}> </p>
+          <Home/> */}
         <p style={{ height: "20px"}}> </p>
         <div style={{backgroundSize: 'cover'}}>
           <p style={{ height: "50px"}}> </p>
