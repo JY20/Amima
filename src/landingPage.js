@@ -10,6 +10,8 @@ import shop from "./shop.png";
 import mes from "./mes.png";
 import group from "./group.png";
 
+import Home from "./mock_pages/home";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap';
 
@@ -18,7 +20,7 @@ export class LandingPage extends React.Component {
     super(props);
     this.t1 = "   Coming Soon   ";
     this.t2 = " Amima";
-    this.t3 = "";
+    this.t3 = " ";
     this.database = firebase.database().ref().child('users');
     this.state = {
       email: "",
@@ -64,7 +66,7 @@ export class LandingPage extends React.Component {
         {this.t1}
         </button>
         <p style={{ height: "10px"}}> </p>
-        <p style={{fontSize: "20px"}}>Sign up to recieve the newest updates for Amima</p>
+        <p style={{fontSize: "30px"}}>Sign up to recieve the newest updates for Amima</p>
         <form onSubmit={this.onSubmitForm}>
           <div class="form-group">
             <label style={{ height: "50px", fontSize: "24px" }}></label>
@@ -77,6 +79,8 @@ export class LandingPage extends React.Component {
           </div>
         </form>
         <p style={{fontSize: "20px"}}>{this.t3}</p>
+        <p style={{ height: "20px"}}> </p>
+          <Home/>
         <p style={{ height: "20px"}}> </p>
         <div style={{backgroundSize: 'cover'}}>
           <p style={{ height: "50px"}}> </p>
