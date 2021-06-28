@@ -5,6 +5,11 @@ import ig from "./instagram.png"
 import ml from "./email.png";
 import lk from "./linkedln.png";
 import logo from "./logoR.png";
+
+import shop from "./shop.png";
+import mes from "./mes.png";
+import group from "./group.png";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap';
 
@@ -42,17 +47,19 @@ export class LandingPage extends React.Component {
   }
   render() {
     return (
-      <div style={{backgroundColor: "#dcedff", backgroundSize: 'cover', backgroundImage: `url("https://wallpaperaccess.com/full/3803832.jpg")`}}>
-        <header style={{ fontSize: "80px", paddingTop: "50px",fontWeight: 'bold'}}>
-          <img style={{height:"80px", margin:"-10px"}} src={logo}/> {this.t2}
+      <div style={{ backgroundSize: 'cover',backgroundColor:"#edf3fb"}}>
+        <header style={{ fontSize: "30px", paddingTop: "50px",fontWeight: 'bold'}}>
+          <img style={{height:"30px",paddingBottom:"5px"}} src={logo}/> 
+          {this.t2}
         </header>
         <br/>
-        <p style={{ fontSize: "35px"}}>
+        <p style={{ fontSize: "50px"}}>
           A low price group buying social platform
           <br/>
           with true product sharing and events around you
           <br/>
         </p>
+        <p style={{ height: "10px"}}> </p>
         <button style={{border:"none",width:"200px",height:"35px",borderRadius:50, fontSize: "25px", color:"#a30316", backgroundColor:"#f9cacf"}}>
         {this.t1}
         </button>
@@ -71,9 +78,8 @@ export class LandingPage extends React.Component {
         </form>
         <p style={{fontSize: "20px"}}>{this.t3}</p>
         <p style={{ height: "20px"}}> </p>
-        <div style={{backgroundColor: "#b8f1e4", backgroundSize: 'cover', 
-        backgroundImage: `url("https://www.xmple.com/wallpaper/violet-blue-gradient-linear-1920x1080-c2-e2b6ff-b6c7ff-a-60-f-14.svg")`}}>
-          <p style={{ height: "20px"}}> </p>
+        <div style={{backgroundSize: 'cover'}}>
+          <p style={{ height: "50px"}}> </p>
           <h1 style={{fontSize:"24px"}}>What is Amima</h1>
           <p style={{fontSize:"24px",paddingRight:"150px", paddingLeft:"150px"}}>
             Amima is a social platform dedicated for group shopping and sharing online shopping experiences.
@@ -81,22 +87,34 @@ export class LandingPage extends React.Component {
             and see what your friends are buying and discover current popular trending products and events.
             We offer huge discounts on products when purchasing as a group or with friends who have the interest in purchasing the same category of products.
           </p>
-          <p style={{ height: "20px"}}> </p>
+          <p style={{ height: "50px"}}> </p>
         </div>
-        <div style={{ margin:"-20px", backgroundSize: 'cover', backgroundImage: `url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSroaf3kTkIraSmni84Du7Rysp3YF3Y8-RVj4EBIaCaB7KP5PYC3MdPaN_U9i4u6_MJxaU&usqp=CAU")`}}>
+        <div style={{backgroundSize: 'cover'}}>
           <br/>
           <h1 style={{fontSize:"24px"}}>Key Features</h1>
           <br/>
           <Container>
             <Row>
               <Col style={{fontSize:"24px"}}>
-                Group shopping: Shop the product you like as a group for a lower price
+                <img style={{height:"100px"}} src={shop}/>
+                <br/>
+                <br/>
+                <p style={{fontSize:"24px", fontWeight:"bold"}}>Group shopping:</p>
+                <p>Shop the product you like as a group for a lower price</p>
               </Col>
               <Col style={{fontSize:"24px"}}>
-                Making friends: Have conversations with friends who have an interest in similar products
+                <img style={{height:"100px"}} src={group}/>
+                <br/>
+                <br/>
+                <p style={{fontSize:"24px", fontWeight:"bold"}}>Making friends:</p>
+                <p>Have conversations with friends who have an interest in similar products</p>
               </Col>
               <Col style={{fontSize:"24px"}}>
-                Product recommendations: Browsing through product reviews and recommendations from others
+                <img style={{height:"100px"}} src={mes}/>
+                <br/>
+                <br/>
+                <p style={{fontSize:"24px", fontWeight:"bold"}}>Product recommendations:</p>
+                <p>Browsing through product reviews and recommendations from others</p>
               </Col>
             </Row>
           </Container>
